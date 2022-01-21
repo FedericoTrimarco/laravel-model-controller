@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOME
 Route::get('/', 'HomeController@index');
 
-Route::get('/movie-news', function() {
-    return view('news');
-})->name('news');
+// NEWS
+Route::get('/movie-news', 'NewsController@index')->name('news');
