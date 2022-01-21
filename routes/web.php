@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
+
+Route::get('/movie-news', function() {
+    return view('news');
+})->name('news');

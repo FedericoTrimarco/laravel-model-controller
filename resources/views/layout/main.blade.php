@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    @include('partials.header')
     <main>
         @yield('content-movies')
     </main>
